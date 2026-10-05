@@ -1,0 +1,129 @@
+/* Layout & Global Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    border: 6px double black;
+    background-image: url('nasa.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+
+}
+
+#nasa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 140px;
+    font-family: "Honk";
+    border: 6px double black;
+    background-color: white;
+    letter-spacing: 3px;
+    padding: 10px 20px;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: "Honk";
+    border: dashed white 2px;
+    background-color: transparent;
+    display: inline-flex;
+    border: 6px double black;
+
+}
+
+h2:hover {
+    background-color: white;
+    color: black;
+}
+
+h3 {
+    font-family: "Honk";
+    font-size: 50px;
+    letter-spacing: 4px;
+    border: solid black 2px;
+    padding: 5px 10px;
+    border: 6px double black;
+
+}
+
+#btn {
+    font-family: "Honk";
+    color: white;
+    font-size: 60px;
+    background-color: white;
+    margin-left: 50px;
+    cursor: pointer;
+    border: 6px double black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.honk-uniquifier {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "MORF" 15, "SHLN" 10;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.facility-card {
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 8px 8px 0px black;
+    /* Pop-art style shadow to match Honk font */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Status & Data Classes inside Cards */
+.location {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.weather {
+    font-size: 20px;
+    color: #333;
+}
+
+.loading {
+    font-style: italic;
+    color: #666;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    border: 2px dashed red;
+    padding: 10px;
+}
